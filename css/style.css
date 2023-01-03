@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #80008094;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  .container {
+    background-color: white;
+    width: 60%;
+  }
+  
+  header {
+    background-color: purple;
+    color: #fff;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    padding: 20px 40px;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,select {
+    padding: 10px;
+    outline: none;
+    border: 1px solid gainsboro;
+  }
+  
+  span {
+    color: #e75c3c;
+    margin-top: 5px;
+    visibility: hidden;
+  }
+  
+  button {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    outline: none;
+    border: none;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn{
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  
+  .form-control.error span {
+    visibility: visible;
+  }
+  
+  .form-control.error input {
+    border-color: #e75c3c;
+  }
+  
+  .form-control.success input {
+    border-color: #2ecc71;
+  }
+  .form-control.error select {
+    border-color: #e75c3c;
+  }
+  
+  .form-control.success select {
+    border-color: #2ecc71;
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+      
+    <form class="form" autocomplete="off">
+
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        <span>Error Message</span>
+      </div>
+
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter Your User Name">
+        <span>Error Message</span>
+      </div>
+
+      <div class="form-control">
+        <label for="cCourse">Select Your Course</label>
+        <select type="text" value="" name="Subject" id="cCourse">
+          <option value=""></option>
+          <option>BE</option>
+          <option>BTECH</option>
+          <option>BBA</option>
+          <option>BCA</option>
+          <option>B.COM</option>
+        </select>
+        <span>Error Message</span>
+      </div>
+        
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        <span>Error Message</span>
+      </div>
+        
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        <span>Error Message</span>
+      </div>
+        
+      <div class="form-control">
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" name="cpassword" id="cpassword" placeholder="Enter Your Password Again">
+        <span>Error Message</span>
+      </div>
+
+      <div class="form-control">
+        <label for="cPhone">Mobile No</label>
+        <input type="text" name="cPhone" id="cPhone" pattern="[0-9]{10}" placeholder="Enter Your Mobile Number">
+        <span>Error Message</span>
+      </div>
+
+      <div class="form-control">
+        <label for="cAddress">Address</label>
+        <input type="text" name="cAddress" id="cAddress" placeholder="Enter Your Current Address">
+        <span>Error Message</span>
+      </div>
+      <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
